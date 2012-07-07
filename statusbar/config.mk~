@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0070)https://bitbucket.org/uberness132/dwmstatus/raw/a814c34a9e95/config.mk -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">NAME = dwmstatus
+VERSION = 1.0
+
+# Customize below to fit your system
+
+# paths
+PREFIX = /usr
+MANPREFIX = ${PREFIX}/share/man
+
+X11INC = /usr/X11R6/include
+X11LIB = /usr/X11R6/lib
+
+# includes and libs
+INCS = -I. -I/usr/include
+LIBS = -L/usr/lib -lc -L${X11LIB} -lX11
+
+# flags
+CPPFLAGS = -DVERSION=\"${VERSION}\"
+CFLAGS = -g -std=c99 -pedantic -Wall -O0 ${INCS} ${CPPFLAGS}
+#CFLAGS = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}
+LDFLAGS = -g ${LIBS}
+#LDFLAGS = -s ${LIBS}
+
+# Solaris
+#CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"
+#LDFLAGS = ${LIBS}
+
+# compiler and linker
+CC = cc
+
+</pre></body></html>

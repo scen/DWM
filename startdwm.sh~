@@ -1,0 +1,7 @@
+#!/bin/bash
+~/.xinitrc
+killall dwmstatus
+/home/stanleyc/DWM/statusbar/dwmstatus &
+while true; do
+/usr/local/bin/dwm 2> /home/stanleyc/DWM/errors.txt
+done
