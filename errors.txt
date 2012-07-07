@@ -13,3 +13,53 @@ dwm: missing fontset: ISO8859-5
 dwm: missing fontset: ISO8859-4
 dwm: missing fontset: ISO8859-3
 dwm: missing fontset: ISO8859-2
+[15978:15978:6442666931:ERROR:x11_util.cc(1121)] X Error detected: serial 5206, error_code 10 (BadAccess (attempt to access private resource denied)), request_code 140, minor_code 1 (X_ShmAttach)
+[15978:15978:6442668173:ERROR:x11_util.cc(1121)] X Error detected: serial 5207, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 5 (X_ShmCreatePixmap)
+[15978:15978:6442668434:ERROR:x11_util.cc(1121)] X Error detected: serial 5208, error_code 9 (BadDrawable (invalid Pixmap or Window parameter)), request_code 149, minor_code 4 (RenderCreatePicture)
+[15978:15978:6442668741:ERROR:x11_util.cc(1121)] X Error detected: serial 5209, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 8 (RenderComposite)
+[15978:15978:6442668978:ERROR:x11_util.cc(1121)] X Error detected: serial 5220, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 2 (X_ShmDetach)
+[15978:15978:6442673455:ERROR:x11_util.cc(1121)] X Error detected: serial 5445, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 7 (RenderFreePicture)
+[15978:15978:6442673555:ERROR:x11_util.cc(1121)] X Error detected: serial 5446, error_code 4 (BadPixmap (invalid Pixmap parameter)), request_code 54, minor_code 0 (X_FreePixmap)
+[15978:15978:6466345702:ERROR:x11_util.cc(1121)] X Error detected: serial 16735, error_code 10 (BadAccess (attempt to access private resource denied)), request_code 140, minor_code 1 (X_ShmAttach)
+[15978:15978:6466345882:ERROR:x11_util.cc(1121)] X Error detected: serial 16736, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 5 (X_ShmCreatePixmap)
+[15978:15978:6466346211:ERROR:x11_util.cc(1121)] X Error detected: serial 16737, error_code 9 (BadDrawable (invalid Pixmap or Window parameter)), request_code 149, minor_code 4 (RenderCreatePicture)
+[15978:15978:6466346488:ERROR:x11_util.cc(1121)] X Error detected: serial 16738, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 8 (RenderComposite)
+[15978:15978:6466346679:ERROR:x11_util.cc(1121)] X Error detected: serial 16749, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 2 (X_ShmDetach)
+[15978:15978:6466347047:ERROR:x11_util.cc(1121)] X Error detected: serial 16876, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 7 (RenderFreePicture)
+[15978:15978:6466347094:ERROR:x11_util.cc(1121)] X Error detected: serial 16877, error_code 4 (BadPixmap (invalid Pixmap parameter)), request_code 54, minor_code 0 (X_FreePixmap)
+[15978:15978:8135636136:ERROR:browser_main_loop.cc(138)] Gdk: IA__gdk_window_get_events: assertion `GDK_IS_WINDOW (window)' failed
+[15978:15978:8135636181:ERROR:browser_main_loop.cc(138)] GLib-GObject: g_object_ref: assertion `G_IS_OBJECT (object)' failed
+[15978:15978:8135792051:ERROR:browser_main_loop.cc(138)] GLib-GObject: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+[236:250:9644300505:ERROR:platform_thread_posix.cc(251)] Not implemented reached in static void base::PlatformThread::SetThreadPriority(base::PlatformThreadHandle, base::ThreadPriority)
+[15978:16051:9644304081:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:9771260170:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:9898199472:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:10025084453:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:10151678954:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:10278240244:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16051:10405130447:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+[15978:16045:10441582234:ERROR:spdy_session.cc(1386)] Spdy stream closed: 6
+[15978:16051:10531917619:ERROR:alsa_output.cc(684)] Failed querying delay: Input/output error
+Usage:
+	chacl acl pathname...
+	chacl -b acl dacl pathname...
+	chacl -d dacl pathname...
+	chacl -R pathname...
+	chacl -D pathname...
+	chacl -B pathname...
+	chacl -l pathname...	[not IRIX compatible]
+	chacl -r pathname...	[not IRIX compatible]
+[15978:15978:12404606307:ERROR:x11_util.cc(1121)] X Error detected: serial 1518924, error_code 10 (BadAccess (attempt to access private resource denied)), request_code 140, minor_code 1 (X_ShmAttach)
+[15978:15978:12404606713:ERROR:x11_util.cc(1121)] X Error detected: serial 1518925, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 5 (X_ShmCreatePixmap)
+[15978:15978:12404607390:ERROR:x11_util.cc(1121)] X Error detected: serial 1518926, error_code 9 (BadDrawable (invalid Pixmap or Window parameter)), request_code 149, minor_code 4 (RenderCreatePicture)
+[15978:15978:12404608089:ERROR:x11_util.cc(1121)] X Error detected: serial 1518927, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 8 (RenderComposite)
+[15978:15978:12404608591:ERROR:x11_util.cc(1121)] X Error detected: serial 1518938, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 2 (X_ShmDetach)
+[15978:15978:12404622158:ERROR:x11_util.cc(1121)] X Error detected: serial 1519168, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 7 (RenderFreePicture)
+[15978:15978:12404622220:ERROR:x11_util.cc(1121)] X Error detected: serial 1519169, error_code 4 (BadPixmap (invalid Pixmap parameter)), request_code 54, minor_code 0 (X_FreePixmap)
+[15978:15978:12531263815:ERROR:x11_util.cc(1121)] X Error detected: serial 1584386, error_code 10 (BadAccess (attempt to access private resource denied)), request_code 140, minor_code 1 (X_ShmAttach)
+[15978:15978:12531264387:ERROR:x11_util.cc(1121)] X Error detected: serial 1584387, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 5 (X_ShmCreatePixmap)
+[15978:15978:12531264998:ERROR:x11_util.cc(1121)] X Error detected: serial 1584388, error_code 9 (BadDrawable (invalid Pixmap or Window parameter)), request_code 149, minor_code 4 (RenderCreatePicture)
+[15978:15978:12531265686:ERROR:x11_util.cc(1121)] X Error detected: serial 1584389, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 8 (RenderComposite)
+[15978:15978:12531266208:ERROR:x11_util.cc(1121)] X Error detected: serial 1584408, error_code 148 (BadShmSeg (invalid shared segment parameter)), request_code 140, minor_code 2 (X_ShmDetach)
+[15978:15978:12531280332:ERROR:x11_util.cc(1121)] X Error detected: serial 1584747, error_code 163 (RenderBadPicture (invalid Picture parameter)), request_code 149, minor_code 7 (RenderFreePicture)
+[15978:15978:12531280391:ERROR:x11_util.cc(1121)] X Error detected: serial 1584748, error_code 4 (BadPixmap (invalid Pixmap parameter)), request_code 54, minor_code 0 (X_FreePixmap)
