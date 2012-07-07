@@ -6,7 +6,7 @@ static const char font[]            = "-xos4-Terminus2-Medium-R-Normal--12-120-7
 static const char colors[NUMCOLORS][ColLast][8] = {
   // border foreground background
   { "#073642", "#657b83", "#002b36" }, // 1 = normal (grey on black)
-  { "#b58900", "#eee8d5", "#002b36" }, // 2 = selected (white on black)
+  { "#0E82C9", "#eee8d5", "#002b36" }, // 2 = selected (white on black)
   { "#dc322f", "#002b36", "#b58900" }, // 3 = urgent (black on yellow)
   { "#073642", "#839496", "#073642" }, // 4 = lightgrey on brightblack
   { "#073642", "#073642", "#002b36" }, // 5 = brightblack on black
@@ -24,7 +24,7 @@ static const char *tags[] = { "À", "Â", "Ã", "Á",  "Ä", "Å", "Æ", "Ç", "
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
+	{ "feh",     NULL,       NULL,       0,            True,        -1 },
 	//{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
 };
 
@@ -45,6 +45,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod1Mask
+#define WINKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -57,12 +58,16 @@ static const Layout layouts[] = {
 /* commands */
 static const char  *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
 static const char *termcmd[]  = { "rxvt-unicode", NULL };
+static const char *lockcmd[] = {"xscreensaver-command", "-lock", NULL};
+static const char *suspendcmd[] = {"~/.dotfiles/suspend.sh"};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_g,		setlayout, {.v = &layouts[3] } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ WINKEY,						XK_l, spawn,			{.v = lockcmd} },
+	{ WINKEY | ShiftMask,		XK_F1,		spawn, 	{SHCMD("~/.dotfiles/suspend.sh")}},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

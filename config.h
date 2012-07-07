@@ -59,6 +59,7 @@ static const Layout layouts[] = {
 static const char  *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
 static const char *termcmd[]  = { "rxvt-unicode", NULL };
 static const char *lockcmd[] = {"xscreensaver-command", "-lock", NULL};
+static const char *suspendcmd[] = {"~/.dotfiles/suspend.sh"};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -66,6 +67,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ WINKEY,						XK_l, spawn,			{.v = lockcmd} },
+	{ WINKEY | ShiftMask,		XK_F1,		spawn, 	SHCMD("~/.dotfiles/suspend.sh")},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
